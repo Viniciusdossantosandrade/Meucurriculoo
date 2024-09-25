@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Curriculo</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">CURRICULO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">H</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">L</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curríuclo</title>
   
-    <div class="container-fluid">
-      <header>
-        <!-- Aqui vai o menu de navegação -->
-      </header>
-    </div>
-    <div class="container">
-      <main>
-        <section>
-          <div class="row">
-            <div>
-              <h2>Sobre Mim</h2>
-              <p>Meu nome é Vinicius dos Santos Andrade,tenho 15 anos e atualmente estou cursando o curso de t.i na Etec MCM, estou  solteiro.Busco sempre manter a disciplina naquilo que almejo ter uma melhora ou que sinto uma maior dificuldade no aprendizado. 
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-                Quero uma oportunidade para poder demonstrar minhas qualidades e te impressionar.
-              </p>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="img/imagens/curriculo img.png" alt="">
+      <button class="banana"></button>
+      
+      <ul class="nav-list">
+        <li><a href="#secao1">Sobre mim</a></li>
+        <li><a href="#secao2">Projetos/Cursos</a></li>
+        <li><a href="#secao3">Relação interpessoal</a></li>
+        <li><a href="#secao4">Contato</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <div class="container">
+
+    <main>
+     <div>
+       <style>
+        .img1{
+          width: 20%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+      
+      
+        <img src="img/imagens/WhatsApp Image 2024-09-24 at 21.46.52.jpeg" class="img1" alt="">
+     </div>
+
+      <section>
+        <div class="container2">
+          <div class="secao1" id="secao1">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Vinicius dos Santos Andrade, tenho 15 anos e moro em Ribeirão Pires, no ABC paulista. 
+              Atualmente, estou cursando o ensino médio e o curso de TI na Etec MCM (Maria Cristina Medeiros).
+              Estou no primeiro ano do ensino médio e estudo no período da tarde, das 13h20 às 18h40. Procuro sempre ter foco e 
+              dedicação maiores nas áreas em que encontro mais dificuldade, como Python, onde estou enfrentando maiores desafios e, por isso, busco me dedicar ainda mais.
+            </p>
+           
+            <h4>Desenvolvimento de Projetos:</h4>
+            <p>Realizei alguns projetos, entre eles um site que desenvolvi utilizando HTML e CSS. Com esse projeto,
+               adquiri mais experiência e aprendizado, que poderão ser aplicados em projetos futuros.</p>
+            <h4>Cursos:</h4>
+            <p>Atualmente, estou fazendo um curso de inglês na Fisk, o que considero de grande importância, pois
+               o mercado de trabalho valoriza muito o conhecimento da língua inglesa. Além disso, em casos de 
+               intercâmbio, é essencial saber falar inglês. Portanto, esse curso será um grande complemento para
+                a área que estou cursando na Etec.</p> 
+              <h4>Relação interpessoal:</h4>
+            <p>Consigo manter uma boa relação e convivência com as pessoas no meu dia a dia. Sempre busco 
+              escutar e entender antes de opinar ou julgar, além de me esforçar para compreender e ter empatia
+               pelos outros. Sou uma pessoa equilibrada e evito ao máximo qualquer tipo de discussão ou 
+               confusão. 
+            </p>
+
+
+          </div>
+
+          <div id="secao3" class="secao3">
+            
+            <!-- Vou usar um componente chamado Accordion do bootstrap -->
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Metas futuras
+                     
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Quero conseguir entrar em uma boa empresa e trazer bons resultados,
+                     atendendo às exigências. Não penso em chegar querendo ser o melhor, mas sim evoluir e conquistar meu espaço com o tempo.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item"> 
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Como lido com as dificuldades
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Sempre tento manter a calma e pensar na melhor forma de solucionar os problemas, tanto para 
+                  mim quanto para meus companheiros de equipe. Também uso as dificuldades como aprendizado, 
+                  pois acredito que, de tudo o que é ruim, podemos tirar algo de positivo.</div>
+              </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <!-- Aqui aparece minha descrição -->
-            </div>
-            <div class="col">
-              <!-- Aqui aparece minha imagem -->
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="row">
-            <div>
-              <h2>Meus Projetos</h2>
-              <p>Desenvolvi um site utilizando o recurso do html e do css.
-                O tema era sobre comida,a minha intençao era tentar passar a ideia de um cadarpio
-                
-
-              </p>
-                
-            </div>
-          </div>
-          <div class="row">
-            <!-- Aqui vai 4 colunas que vão conter um card cada uma delas -->
-          </div>
-        </section>
-      </main>
-    </div>
-    <div class="container-fluid">
-      <footer>
-        <!-- Aqui vai o rodapé -->
-      </footer>
-    </div>
 
 
-    <script src="js/bootstrap.js"></script>
+          <h2>Contate-me</h2>
+          <div id="secao4" class="secao4">
+              
+      
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Seu E-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Sua mensagem: </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+                    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</div>
+<footer>
+    
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
-</html>
 
+</html>
