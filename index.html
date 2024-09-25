@@ -11,11 +11,13 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <img src="img/imagens/curriculo img.png" alt="">
-      <button class="banana"></button>
-      
+  <nav class="navbar navbar-dark navbar-custom fixed-top" style="background-color: #343a40;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
       <ul class="nav-list">
         <li><a href="#secao1">Sobre mim</a></li>
         <li><a href="#secao2">Projetos/Cursos</a></li>
@@ -29,20 +31,6 @@
   <div class="container">
 
     <main>
-     <div>
-       <style>
-        .img1{
-          width: 20%;
-          height: 100%;
-          justify-content: center;
-          align-items: center;
-        }
-      </style>
-      
-      
-        <img src="img/imagens/WhatsApp Image 2024-09-24 at 21.46.52.jpeg" class="img1" alt="">
-     </div>
-
       <section>
         <div class="container2">
           <div class="secao1" id="secao1">
@@ -52,10 +40,14 @@
               Estou no primeiro ano do ensino médio e estudo no período da tarde, das 13h20 às 18h40. Procuro sempre ter foco e 
               dedicação maiores nas áreas em que encontro mais dificuldade, como Python, onde estou enfrentando maiores desafios e, por isso, busco me dedicar ainda mais.
             </p>
+
+            </div>
            
-            <h4>Desenvolvimento de Projetos:</h4>
-            <p>Realizei alguns projetos, entre eles um site que desenvolvi utilizando HTML e CSS. Com esse projeto,
-               adquiri mais experiência e aprendizado, que poderão ser aplicados em projetos futuros.</p>
+            <h4>Sobre mim</h4>
+            <p>Meu nome é Vinicius dos Santos Andrade, tenho 15 anos e moro em Ribeirão Pires, no ABC paulista. 
+              Atualmente, estou cursando o ensino médio e o curso de TI na Etec MCM (Maria Cristina Medeiros).
+              Estou no primeiro ano do ensino médio e estudo no período da tarde, das 13h20 às 18h40.Procuro sempre ter foco e 
+              dedicação maiores nas áreas em que encontro mais dificuldade, como Python, onde estou enfrentando maiores desafios e, por isso, busco me dedicar ainda mais.</p>
             <h4>Cursos:</h4>
             <p>Atualmente, estou fazendo um curso de inglês na Fisk, o que considero de grande importância, pois
                o mercado de trabalho valoriza muito o conhecimento da língua inglesa. Além disso, em casos de 
@@ -70,10 +62,26 @@
 
 
           </div>
+          <section id="habilidades" class="secao">
+            <div class="container2" >
+              <h5 class="titulo">Conhecimentos</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="img/imagens/cerebro.jpg" class="card-img-top" alt="HTML">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Tenho experiência com utilização de CSS, HTML, SCRUM, JavaScript e BPMN e PYTHON.</p>
+                        </div>
+                    </div>
+                </div>
 
           <div id="secao3" class="secao3">
             
-            <!-- Vou usar um componente chamado Accordion do bootstrap -->
+           
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
@@ -107,6 +115,11 @@
               </div>
             </div>
           </div>
+          <div class="container">
+            <img src="img/imagens/email.jpg" alt="minha foto" class="mx-auto mb-4" height="80px" width="110px" style="border-radius: 40px; ">
+              
+          
+          </div>
 
 
           <h2>Contate-me</h2>
@@ -128,7 +141,12 @@
         </div>
       </div>
     </section>
-
+    <div class="container">
+      <img src="img/imagens/WhatsApp Image 2024-09-24 at 21.46.52.jpeg" alt="minha foto" class="mx-auto mb-4" height="250px" width="220px" style="border-radius:40px ; ">
+        
+        
+    
+    </div>
   </main>
 </div>
 
